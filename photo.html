@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="JS/togglemenu.js"></script>
+<script src="jquery-3.2.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>	
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>	
+<script src="JS/photoscript.js"></script>
+		<!--Links and Scripts-->
+<link href="CSS/stylenav.css" rel="stylesheet" />
+<link href="CSS/fonts.css" rel="stylesheet" />
+<link href="CSS/photo.css" rel="stylesheet" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Untitled Document</title>
+</head>
+
+<body>
+<nav id ="navbar">				
+<a href="index.html">										<!--NAVIGATION BAR-->
+<img src="Assets/logo.png" alt="sevenfoldlogo" />		
+</a>					<!--Navigation Logo-->
+        <p>AVENGED SEVENFOLD</p>
+		       
+    <div id="sidebar">													<!--BURGER ICON NAVIGATION-->
+       <ul>
+       <a href="store.html"><li>STORE</li></a>								
+		<a href="photohome.html">
+		<li>
+        PHOTOS									<!--Drop down-->
+        
+            <ul class="hidden">
+                <li><a href="photohtml.html">Live</a></li>
+                <li><a href="photoother.html">Other</a></li>
+            </ul>
+            
+        </li>
+        </a>	
+        <a href="tour.html"><li>TOUR</li></a>
+        <a href="news.html"><li>>NEWS</li></a>
+        <a href="index.html"><li>HOME</li></a>
+       </ul>
+    </div>
+    <div class="mainmenuicon" onclick="toggleSidebar()">					<!--Burger menu icon-->
+            <span></span>
+            <span></span>
+            <span></span>
+            
+		</div>
+    
+    <ul class ="menu">
+    <a href="store.html"><li>STORE</li></a>								<!--Desktop Navigation -->
+	
+    <a href="photohtml.html">
+    <li id="photodrop">
+    PHOTOS
+        <ul class="hidden">
+            <a href="photo.html">Live</a>
+            <a href="photoother.html">Other</a>
+        </ul>
+        
+    </li>
+    </a>
+    <a href="tour.html"><li>TOUR</li></a>
+    <a href="news.html"><li>NEWS</li></a>
+    <a href="index.html"><li>HOME</li></a>
+    </ul>
+
+</nav>
+ 
+ <section id="main">
+ <div class="video-background">
+    <div class="video-foreground">
+      <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+ </section>
+ 
+
+ 
+ 
+<section class="social-bar">
+<div id="social-icons">
+<a href="#"><img src="Assets/social/facebookicon.png"></a>
+<a href="#"><img src="Assets/social/twittericon.png"></a>
+<a href="#"><img src="Assets/social/insta.png"></a>
+<a href="#"><img src="Assets/social/youtubelogo.png"></a>
+<a href="#"><img src="Assets/social/spotifyicon.png"></a>
+</div>
+<div id="themes">
+
+
+</div>
+
+</section>
+<footer class="page-footer">
+	<div id="footerinner">
+		<div id="footer-img">
+		<!--<img src="Assets/logo.png" alt="sevenfoldlogo" />-->
+		</div>
+          <div class="footer-links"> 		  
+		  <p style="color: white; font-family: Tahoma, Geneva, sans-serif">Website Links</p>
+                  <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">News</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!">Tour</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Photos</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Store</a></li>
+            </div>  
+			<div class="footer-links"> 		  
+		  <p style="color: white; font-family: Tahoma, Geneva, sans-serif">Social Links</p>
+                  <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!">Youtube</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Amazon</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Other</a></li>
+            </div>	
+			<div class="footer-links"> 		  
+		  <p style="color: white; font-family: Tahoma, Geneva, sans-serif">Social Links</p>
+                  <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!">Youtube</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Amazon</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Other</a></li>
+            </div>	
+			
+          <div id="footer-copyright">            
+            © 2017 AVENGED SEVENFOLD          
+          </div>
+	</div>
+</footer>
+
+
+</div>
+</body>
+</html>

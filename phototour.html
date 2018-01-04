@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Photo Tour</title>
+		<!--Links and Scripts-->
+<link href="CSS/stylenav.css" rel="stylesheet" />
+<link href="CSS/fonts.css" rel="stylesheet" />
+<link href="CSS/store.css" rel="stylesheet" />
+<link href="CSS/photo.css" rel="stylesheet" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<script src="JS/togglemenu.js"></script>
+    <script src="JS/photodisplay.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+    <script src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>	
+    <script src="http://code.jquery.com/jquery-latest.js"></script>	
+    
+
+</head>
+
+<body>
+<nav id ="navbar">		
+    	<!--Navigation Logo-->		
+		<a href="index.html"><img src="Assets/logo.png" alt="sevenfoldlogo" /></a>					
+        <p>AVENGED SEVENFOLD</p>
+	
+    <!--BURGER ICON NAVIGATION-->	       
+    <div id="sidebar">													
+       <ul>
+       	<li><a href="#store">STORE</a></li>								
+		<li><a href="photohome.html">PHOTOS </a></li>      	
+        <li><a href="tour.html">TOUR</a></li>
+       	<li><a href="news.html">NEWS</a></li>
+        <li><a href="index.html">HOME</a></li>
+       </ul>
+    </div>
+    
+    <!--Burger menu icon-->
+    <div class="mainmenuicon" onclick="toggleSidebar()">					
+            <span></span>
+            <span></span>
+            <span></span>
+	</div>
+        
+    <!--Desktop Navigation -->  
+    <ul class ="menu">
+        <li><a href="store.html">STORE</a></li>								
+        <li id="photodrop"> <a href="photohome.html">PHOTOS</a>
+           <ul class="hidden">
+             <li><a href="phototour.html">The tour</a></li>        
+           </ul>
+        </li>
+        <li><a href="tour.html">TOUR</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="index.html">HOME</a></li>
+    </ul>
+	</nav>
+ 
+ <section id = "main-container">
+ 	<div id="headercontainer">
+    	<div id="header">
+			<div class="maintextbox">
+	 			 <h2>The Aveneged Sevenfold Tour</h2>     
+	 			<p><a href="#content">Go to Gallery</a></p>     
+  			</div>
+		</div>
+    </div>
+	
+ 	<div id ="content">
+ 	<section id = "gallery">
+    <h2 class="headingnone">.</h2>
+      <span class="close cursor" onclick=" closeGallery() ">&times;</span>
+       <div id="gallerycontent">
+     
+       </div>
+      
+    </section>
+ 	</div>
+ <div id = "photochange">
+ <input type="range" min="15" max="45" value="33" class="sliderbar" id="myRange"  onchange="imagesize(value)">
+ <p onclick="imagesize(33)">Reset Size</p>
+ </div>
+ </section>
+ 
+<section class="social-bar">
+<h2 class="headingnone">.</h2>
+    <div id="social-icons">
+    <a href="https://www.facebook.com/AvengedSevenfold"><img src="Assets/social/facebookicon.png" alt="facebookicon"></a>
+    <a href="https://twitter.com/TheOfficialA7X"><img src="Assets/social/twittericon.png" alt="twittericon"></a>
+    <a href="https://www.instagram.com/avengedsevenfold/"><img src="Assets/social/insta.png"		 alt="instaicon"></a>
+    <a href="https://www.youtube.com/user/avengedsevenfold"><img src="Assets/social/youtubelogo.png" alt="youtubeicon"></a>
+    <a href="https://open.spotify.com/artist/0nmQIMXWTXfhgOBdNzhGOs"><img src="Assets/social/spotifyicon.png" alt="spotifyicon"></a>
+    </div>
+</section>
+<footer class="page-footer">
+	<div id="footerinner">
+		
+          <div class="footer-links"> 		  
+		  <p style="color: white; font-family: Tahoma, Geneva, sans-serif">Website Links</p>
+          <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">News</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!">Tour</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Photos</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Store</a></li>
+          </ul>
+            </div>  
+			<div class="footer-links"> 		  
+		 <p style="color: white; font-family: Tahoma, Geneva, sans-serif">Social Links</p>
+          <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!">Youtube</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Amazon</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Other</a></li>
+          </ul>
+            </div>	
+			<div class="footer-links"> 		  
+		  <p style="color: white; font-family: Tahoma, Geneva, sans-serif">Themes</p>
+          <ul>         
+                  <li><a class="grey-text text-lighten-3" href="#!" onclick="themechange(0)">Standard</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!" onclick="themechange(1)">Exist</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!" onclick="themechange(2)">City of Evil</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!" onclick="themechange(3)">Nightmare</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">More Soon!</a></li>
+          </ul>        
+            </div>	
+           
+			
+           <script src="JS/themes.js"></script>
+	</div>
+</footer>
+
+<script src="JS/themes.js"></script>
+
+</body>
+</html>

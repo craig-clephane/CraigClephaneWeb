@@ -1,0 +1,145 @@
+#navbar img {
+	float: left;
+	
+}
+#navbar p {
+	font-family: adler;	
+	color: white;
+	display: inline-block;
+	text-align:center;
+	float-left;	
+	
+}
+body {
+	margin: -0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+#navbar {
+	width: 100%;
+	height: auto;
+	position: fixed;
+	background-color: black;
+	opacity: 0.9;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	
+}
+
+ul li {
+	float: right;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 15px;
+	
+}
+
+ul li a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	font-family: Tahoma, Geneva, sans-serif;
+
+}
+ul li a:hover {
+	background-color: #4d0066;
+}
+li ul{
+	display: none;
+	background-color: #1a1a1a;
+}
+li ul li{
+	display: block;
+	float: none;
+}
+ul li a:hover + .hidden, .hidden:hover{
+	display:block;
+	
+}
+
+.menu {
+	
+	float: right;
+}
+
+
+#sidebar {
+	position: fixed;	
+	margin-top: 61px;
+	width: 200px;
+	height: 100%;
+	background: black;
+	opacity: 1;
+	left: -200px;
+	transition: all 500ms linear;
+}
+#sidebar.active {
+	left:0px;
+	
+}
+#sidebar ul li {
+	color:white;
+	list-style: none;
+	padding: 15p 10px;
+	border-bottom: 1px: soild rgba(100,100,100,0.3);
+	
+}
+
+.mainmenuicon{
+	padding: 20px 0;	
+	display: block;
+	cursor: pointer;
+	width: 30px;
+	float: left;
+	box-sizing: border-box;
+	background-color: none;
+}
+div span{
+	margin: 1px 1px 3px 10px;
+	display: block;
+	height: 4px;
+	width: 30px;
+	background-color: white;
+}
+
+
+
+@media only screen and (min-width: 992px) {
+	.menu{
+		display: block;
+		
+	}
+	.mainmenuicon{
+		display:none;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.menu{
+		display: none;
+	}
+	.mainmenuicon{
+		display:block;
+		float: left;
+		padding-right: 10%;
+	}
+	
+	#navbar img {
+		float: right;
+		
+	}
+	
+	#navbar p {
+		float: right;
+		line-height: 30px;
+	}
+}

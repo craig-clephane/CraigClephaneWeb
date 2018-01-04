@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News</title>
+		<!--Links and Scripts-->
+    <link href="CSS/stylenav.css" rel="stylesheet" />
+    <link href="CSS/fonts.css" rel="stylesheet" />
+    <link href="CSS/stylenews.css" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <script src="JS/sliderbullet.js"></script>
+    <script src="JS/news.js"></script>	
+    <script src="JS/togglemenu.js"></script>
+    <script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+    <script src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+    <script src="JS/themes.js"></script>
+</head>
+
+<body>
+<nav id ="navbar">		
+    	<!--Navigation Logo-->		
+		<a href="index.html"><img src="Assets/logo.png" alt="sevenfoldlogo" /></a>					
+        <p>AVENGED SEVENFOLD</p>
+	
+    <!--BURGER ICON NAVIGATION-->	       
+    <div id="sidebar">													
+       <ul>
+       	<li><a href="#store">STORE</a></li>								
+		<li><a href="#photos">PHOTOS </a></li>      	
+        <li><a href="tour.html">TOUR</a></li>
+       	<li><a href="news.html">NEWS</a></li>
+        <li><a href="index.html">HOME</a></li>
+       </ul>
+    </div>
+    
+    <!--Burger menu icon-->
+    <div class="mainmenuicon" onclick="toggleSidebar()">					
+            <span></span>
+            <span></span>
+            <span></span>
+	</div>
+        
+    <!--Desktop Navigation -->  
+    <ul class ="menu">
+        <li><a href="store.html">STORE</a></li>								
+        <li id="photodrop"> <a href="photohome.html">PHOTOS</a>
+           <ul class="hidden">
+             <li><a href="phototour.html">The tour</a></li>        
+           </ul>
+        </li>
+        <li><a href="tour.html">TOUR</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="index.html">HOME</a></li>
+    </ul>
+</nav>
+
+<section id="main-container">
+	<h2 class="headingnone">Top img</h2>
+       
+        	
+            <section id ="articleheader">
+                <div id="articleheadertextbox">
+                    <h2>Articles</h2>
+                    <p id="textboxback" style="float: right; text-decoration: none;"><a href="news.html">Back</a></p>          
+                </div>
+            </section>
+    
+	<section id="slider">
+        <div class="sliderheader">
+        	 <h2>User Customization</h2>
+        </div>
+   		 <div class="sliderbox">
+       		 <p>Article Size</p>
+       			 <input type="range" min="250" max="500" value="50" class="sliderbar"  onchange="articlesize(value)">
+   		 </div>
+  		 <div class="sliderbox">
+    	    <p>Font Size</p>
+    		    <input type="range" min="10" max="20" value="50" class="sliderbar" onchange="articlefontsize(value)">
+  	  </div>
+    </section>
+    
+	<section id="main-content">
+		<h2 class="headingnone">Article Containers</h2>
+			<section id="article-containers">
+            
+        <div class = "innerarticleheader">
+       		 <h2 id="section1">..</h2>
+             <p id="section2"></p>
+        </div>
+        
+        <div id = "innerarticletext">      	
+             
+        </div>
+        
+        <div id = "innerarticlerecent">
+        <p style="width: 100%; font-size: 10px; margin-bottom: 2vh; padding-left: 0px;">Recent Articles</p>
+            <div class = "recentarticle">
+                 <img src="assets/articleimage/article0.png" alt="articleheader">   
+                 <h2>“The Stage” Deluxe Edition Available Now!</h2>  
+                 <p>Posted : 24th December 2017</p>
+            </div>
+            
+            <div class = "recentarticle">
+            	 <img src="assets/articleimage/article0.png" alt="articleheader">           
+                 <h2>“The Stage” Deluxe Edition Available Now!</h2>
+                 <p>Posted : 24th December 2017</p>
+            </div>
+            
+            <div class = "recentarticle"> 
+            	 <img src="assets/articleimage/article0.png" alt="articleheader">   
+                 <h2>“The Stage” Deluxe Edition Available Now!</h2>   
+                 <p>Posted : 24th December 2017</p>    
+            </div>
+            
+        </div>
+		</section>
+		
+	</section>
+	
+</section> 
+
+
+
+
+
+
+<section class="social-bar">
+<h2 class="headingnone">.</h2>
+<div id="social-icons">
+<a href="#"><img src="Assets/social/facebookicon.png" alt="facebookicon"></a>
+    <a href="#"><img src="Assets/social/twittericon.png" alt="twittericon"></a>
+    <a href="#"><img src="Assets/social/insta.png"		 alt="instaicon"></a>
+    <a href="#"><img src="Assets/social/youtubelogo.png" alt="youtubeicon"></a>
+    <a href="#"><img src="Assets/social/spotifyicon.png" alt="spotifyicon"></a>
+</div>
+<div id="themes">
+
+
+</div>
+
+</section>
+<footer class="page-footer">
+	<div id="footerinner">
+		<div id="footer-img">
+		<!--<img src="Assets/logo.png" alt="sevenfoldlogo" />-->
+		</div>
+          <div class="footer-links"> 		  
+		  <p style="color: white; font-family: Tahoma, Geneva, sans-serif">Website Links</p>
+          <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">News</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!">Tour</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Photos</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Store</a></li>
+          </ul>
+            </div>  
+			<div class="footer-links"> 		  
+		  <p style="color: white; font-family: Tahoma, Geneva, sans-serif">Social Links</p>
+          <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!">Youtube</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Amazon</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Other</a></li>
+          </ul>
+            </div>	
+			<div class="footer-links"> 		  
+		  <p style="color: white; font-family: Tahoma, Geneva, sans-serif">Themes</p>
+          <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!" onclick="themechange(0)">Standard</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!" onclick="themechange(1)">Exist</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!" onclick="themechange(2)">City of Evil</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!" onclick="themechange(3)">Nightmare</a></li>
+          </ul>        
+            </div>	
+           
+			
+           <script src="JS/themes.js"></script>
+	</div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+body{
+	font-family: 'Open Sans';
+}
+
+#top {
+	background-image: url("../Assets/storebanner.jpg");
+	width: 100%;
+	height:30vh;
+	background-position: center 0%;
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+#box {
+	
+	margin-left: auto;
+	margin-right: auto;
+	background-color: red;
+	width: 50%;
+	z-index:-1;
+}
+#main {
+	width: 100%;
+	height: auto;
+	margin: 0, auto;
+	background-color: #f2f2f2;
+}
+
+#item-container {
+	width: 55%;
+	height: 160vh;
+	background-color: white;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+.storeimg:hover {
+	opacity: 0.9;
+}
+.imgdescription {
+  position: absolute;
+  color: #fff;
+  transition: opacity .2s, visibility .2s;
+  display: ;
+}
+.iteminfo {
+	float: left;
+	text-align: left !important;
+	
+}
+.iteminfo p{
+	color: black !important;
+	
+}
+.item p {
+margin-top: 2vh !important;	
+}
+.products img {
+margin: 0;	
+ z-index:-1;
+}
+.products ul {
+margin-left: 0;	
+}
+.color-change {
+background-color: blue;
+margin: 0;
+margin-top: 0;	
+}
+.products li {
+	width: 250px;
+	height: auto;
+	list-style-type: none;
+	float: left;
+	display: flex;
+	background-color: white;
+	display:block;
+	margin: 1px;
+	text-align: center;
+}
+.item img {
+width: 250px;
+height: 250px;	
+}
+.colorbuttons {
+    text-decoration: none;
+    display: inline-block;
+	margin:  auto;
+	
+	
+}
+.blackbutton {
+	background-color: black;
+	width: 40px;
+    height: 40px;
+	border:none;
+	
+}
+.greybutton {
+background-color: grey;
+width: 40px;
+    height: 40px;
+	border:none;
+}
+.bluebutton {
+	background-color: blue;
+	width: 40px;
+    height: 40px;
+	border:none;
+}
+.redbutton {
+	background-color: red;
+	width: 40px;
+    height: 40px;
+	border:none;
+	
+}
+
+.greenbluebutton {
+	background-color: rgb(65, 78, 77);
+	width: 40px;
+    height: 40px;
+	border:none;
+}
+.brownbutton {
+	background-color: brown;
+	width: 40px;
+    height: 40px;
+	border:none;
+	
+}
+
+#cart-button img {
+width: 20px; 
+height: 20px;	
+}
+#remove-storage img {
+width: 20px;
+height: 20px;
+}
+#remove-storage{
+		float: right;	
+		margin-right: 3vw;
+		margin-top: auto;
+		margin-bottom: auto;
+		background: none;
+		border: none;
+		height: 50px;
+		}
+.item p{
+			margin:0;
+			font-weight:bold;		
+			color:#c3c3c3;		
+}	
+		
+		.cart{		
+			right:0;
+			top:0;
+			width:100%;
+			background-color: black;
+			color: white;
+			height:auto;			
+			display: hidden;
+		}		
+		#carthidden {
+			display: none;
+			
+		}
+		.cart-content {		
+			margin 0;
+		}
+		h1{
+			text-align:center;
+			color:#555;
+		}
+		h2{
+			position:absolute;
+			font-size:16px;
+			left:10px;
+			bottom:20px;
+			color:#555;
+		}
+		.total{
+			margin:0;
+			text-align:left;
+			padding-left:3vw;
+			margin-top: 3vh;
+			padding-bottom: 3vh;
+		}
+		#show-cart {
+		width: 100%;
+		height: 7vh;
+		background-color: black;	
+		display: block;		
+		float: left;
+		}
+		#cart-button {
+		float: left;	
+		margin-left: 3vw;
+		margin-top: auto;
+		margin-bottom: auto;
+		background: none;
+border: none;
+height: 50px;
+		}
+		#show-cart h1 {
+		
+		float: left;
+		font-size: 15px;
+		font-family: Tahoma, Geneva, sans-serif;
+		margin-left: 5%;	
+		color: white;
+		display: inline-block;
+		text-align: center;
+		line-height: 50px;
+		margin-top: auto;
+		margin-bottom: auto;
+		}
+		.datagrid-view {
+		height: auto !important;	
+		margin-left: 3vw;	
+		
+		}
+		.datagrid-body {
+		width: 700px !important;	
+		}
+		.datagrid-view1 {
+		height: 7vh;
+		}
+		.datagrid-view2 {
+		margin-top: 0 auto !important;	
+		}
+		.datagrid-cell-c1-price {
+		
+		width: 70px !important;
+		text-align:left !important;
+		padding-right: 30px !important;
+		}
+		.datagrid-cell-c1-quantity {
+			width: 70px !important;
+			text-align:left !important;
+			padding-right: 30px !important;
+		}
+		.datagrid-cell-c1-color {
+			width: 70px !important;
+			text-align:left !important;
+		}
+		
+		
+		.cart-droppable {
+		position: relative;	
+		}
+		.sticky {
+			position: fixed;
+			top: 6.7%;
+			width: 100%;
+			
+		}
+		

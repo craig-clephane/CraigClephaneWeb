@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="JS/togglemenu.js"></script>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>	
+<script src="JS/sliderbullet.js"></script>
+<script src="JS/news.js"></script>		
+		<!--Links and Scripts-->
+<link href="CSS/stylenav.css" rel="stylesheet" />
+<link href="CSS/fonts.css" rel="stylesheet" />
+<link href="CSS/stylenews.css" rel="stylesheet" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<nav id ="navbar">		
+    	<!--Navigation Logo-->		
+		<a href="index.html"><img src="Assets/logo.png" alt="sevenfoldlogo" /></a>					
+        <p>AVENGED SEVENFOLD</p>
+	
+    <!--BURGER ICON NAVIGATION-->	       
+    <div id="sidebar">													
+       <ul>
+       	<li><a href="#store">STORE</a></li>								
+		<li><a href="#photos">PHOTOS </a></li>      	
+        <li><a href="tour.html">TOUR</a></li>
+       	<li><a href="news.html">NEWS</a></li>
+        <li><a href="index.html">HOME</a></li>
+       </ul>
+    </div>
+    
+    <!--Burger menu icon-->
+    <div class="mainmenuicon" onclick="toggleSidebar()">					
+            <span></span>
+            <span></span>
+            <span></span>
+	</div>
+        
+    <!--Desktop Navigation -->  
+    <ul class ="menu">
+        <li><a href="store.html">STORE</a></li>								
+        <li id="photodrop"> <a href="photohome.html">PHOTOS</a>
+           <ul class="hidden">
+             <li><a href="phototour.html">The tour</a></li>        
+           </ul>
+        </li>
+        <li><a href="tour.html">TOUR</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="index.html">HOME</a></li>
+    </ul>
+</nav>
+
+<section id="main-container">
+	<section id="top">	
+		<img src="assets/newsheader1.jpg" alt="newsheader" />
+	</section> 	
+    
+    <section id ="articleheader">
+        <div id="articleheadertextbox">
+        	<p>Articles</p>
+			<p id="textboxback" style="float: right; text-decoration: none;"><a href="news.html">Back</a></p>          
+        </div>
+    </section>
+    
+	<section id="slider">
+    <div class="sliderheader">
+     <h1>User Customization</h1>
+    </div>
+    <div class="sliderbox">
+        <p>Article Size</p>
+        <input type="range" min="250" max="500" value="50" class="sliderbar" id="myRange"  onchange="articlesize(value)">
+    </div>
+    <div class="sliderbox">
+        <p>Font Size</p>
+        <input type="range" min="10" max="20" value="50" class="sliderbar" id="myRange"  onchange="articlefontsize(value)">
+    </div>
+    </section>
+	<section id="main-content">
+	
+		<section id="article-containers">
+		<div class = "innerarticleimage">
+        	
+        </div>
+        
+        <div class = "innerarticleheader">
+       		 <h1 id="section1"></h1>
+             <p id="section2"></p>
+        </div>
+        
+        <div id = "innerarticletext">      	
+             
+        </div>
+        
+        <div id = "innerarticlerecent">
+        <p style="width: 100%; font-size: 10px; margin-bottom: 2vh; padding-left: 0px;">Recent Articles</p>
+            <div class = "recentarticle">
+                 <img src="assets/articleimage/article0.png">   
+                 <h1>“The Stage” Deluxe Edition Available Now!</h1>  
+                 <p>Posted : 24th December 2017</p>
+            </div>
+            
+            <div class = "recentarticle">
+            	 <img src="assets/articleimage/article0.png">           
+                 <h1>“The Stage” Deluxe Edition Available Now!</h1>
+                 <p>Posted : 24th December 2017</p>
+            </div>
+            
+            <div class = "recentarticle"> 
+            	 <img src="assets/articleimage/article0.png">   
+                 <h1>“The Stage” Deluxe Edition Available Now!</h1>   
+                 <p>Posted : 24th December 2017</p>    
+            </div>
+            
+        </div><!--
+        <div class = "articlebody">
+         		<div class = "imagewrapping">
+                    <div class = "imagecontainer">
+                        <img src="assets/article0.png">
+                    </div>
+          		  <div class="overlay"></div>
+  					<div class="button" onclick="displayarticle()"><a href="#">Read More</a></div>
+          		</div>
+                <div class="textcontainer">
+                    <h1>“The Stage” Deluxe Edition Available Now!</h1>
+                    <p>Dec 22nd, 2017</p>
+          		</div>
+        </div>
+        -->
+		</section>
+		
+	</section>
+	
+</section> 
+
+
+
+
+
+
+<section class="social-bar">
+<div id="social-icons">
+<a href="#"><img src="Assets/social/facebookicon.png"></a>
+<a href="#"><img src="Assets/social/twittericon.png"></a>
+<a href="#"><img src="Assets/social/insta.png"></a>
+<a href="#"><img src="Assets/social/youtubelogo.png"></a>
+<a href="#"><img src="Assets/social/spotifyicon.png"></a>
+</div>
+<div id="themes">
+
+
+</div>
+
+</section>
+<footer class="page-footer">
+	<div id="footerinner">
+		<div id="footer-img">
+		<!--<img src="Assets/logo.png" alt="sevenfoldlogo" />-->
+		</div>
+          <div class="footer-links"> 		  
+		  <p style="color: white; font-family: Tahoma, Geneva, sans-serif">Website Links</p>
+                  <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">News</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!">Tour</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Photos</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Store</a></li>
+            </div>  
+			<div class="footer-links"> 		  
+		  <p style="color: white; font-family: Tahoma, Geneva, sans-serif">Social Links</p>
+                  <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!">Youtube</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Amazon</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Other</a></li>
+            </div>	
+			<div class="footer-links"> 		  
+		  <p style="color: white; font-family: Tahoma, Geneva, sans-serif">Social Links</p>
+                  <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!">Youtube</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Amazon</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Other</a></li>
+            </div>	
+			
+          <div id="footer-copyright">            
+            © 2017 AVENGED SEVENFOLD          
+          </div>
+	</div>
+</footer>
+
+
+</div>
+</body>
+</html>

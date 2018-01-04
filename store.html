@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="JS/togglemenu.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+<script src="JS/storescript.js"></script>
+		<!--Links and Scripts-->
+<link href="CSS/stylenav.css" rel="stylesheet" />
+<link href="CSS/fonts.css" rel="stylesheet" />
+<link href="CSS/store.css" rel="stylesheet" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Untitled Document</title>
+</head>
+
+<body>
+<nav id ="navbar">				
+<a href="index.html">										<!--NAVIGATION BAR-->
+<img src="Assets/logo.png" alt="sevenfoldlogo" />		
+</a>					<!--Navigation Logo-->
+        <p>AVENGED SEVENFOLD</p>
+		       
+    <div id="sidebar">													<!--BURGER ICON NAVIGATION-->
+       <ul>
+       <a href="store.html"><li>STORE</li></a>								
+		<a href="photohome.html">
+		<li>
+        PHOTOS									<!--Drop down-->
+        
+            <ul class="hidden">
+                <li><a href="photohtml.html">Live</a></li>
+                <li><a href="photoother.html">Other</a></li>
+            </ul>
+            
+        </li>
+        </a>	
+        <a href="tour.html"><li>TOUR</li></a>
+        <a href="news.html"><li>>NEWS</li></a>
+        <a href="index.html"><li>HOME</li></a>
+       </ul>
+    </div>
+    <div class="mainmenuicon" onclick="toggleSidebar()">					<!--Burger menu icon-->
+            <span></span>
+            <span></span>
+            <span></span>
+            
+		</div>
+    
+    <ul class ="menu">
+    <a href="store.html"><li>STORE</li></a>								<!--Desktop Navigation -->
+	
+    <a href="photohtml.html">
+    <li id="photodrop">
+    PHOTOS
+        <ul class="hidden">
+            <a href="photo.html">Live</a>
+            <a href="photoother.html">Other</a>
+        </ul>
+        
+    </li>
+    </a>
+    <a href="tour.html"><li>TOUR</li></a>
+    <a href="news.html"><li>NEWS</li></a>
+    <a href="index.html"><li>HOME</li></a>
+    </ul>
+
+</nav>
+    <div id="top">	
+            
+    </div> 
+    <div id="show-cart">
+   <button id="cart-button" onclick="showCart()"><img src="Assets/shoppingcarticon.png"/></button>
+   <button id="remove-storage" onclick="removestorage()"><img src="Assets/emptycarticon.png"/></button>
+   <h1>Shopping Cart / Drag and Drop Items Here </h1>
+    <div id="carthidden">
+    <div class="cart">
+		<div>
+		<table id="cartcontent" fitColumns="true" style="width:400px;height:auto;">
+			<thead>
+				<tr>
+					<th field="name" width=140>Item</th>
+					<th field="quantity" width=70 align="right">Quantity</th>
+					<th field="price" width=70 align="right">Price</th>
+                    <th field="colour" width=70 align="right">Color</th>
+				</tr>
+			</thead>
+		</table>
+		</div>
+		<p class="total">Total: £0</p>
+	</div>
+    </div>
+    </div>
+    
+    <div id="box">
+    </div>
+<section id= "main">
+	
+	<div id="item-container">
+    <ul class="products">
+		<li class="item" data-name="The Stage Offical T-Shirt" data-price="15" data-colour="black">
+            <div class="storeimg">
+				<img id="img1"src="Assets/store/tshirt1black.jpg"/>
+               </div>
+                <div class="colorbuttons">
+                <button class="blackbutton" type="button" onclick='colorchange("Assets/store/tshirt1black.jpg", "img1");'></button>
+                <button class="greybutton" type="button" onclick='colorchange("Assets/store/tshirt1grey.jpg", "img1");'></button>
+                <button class="bluebutton" type="button" onclick='colorchange("Assets/store/tshirt1blue.jpg", "img1");'></button>
+                </div>
+				<div class="iteminfo">
+					<p>The Stage Offical T-Shirt</p>
+					<p>Price:£15</p>
+				</div>
+		</li>
+		<li class="item" data-name="Deathbat T-Shirt" data-price="12">
+				<div class="storeimg">
+				<img id="img2"src="Assets/store/tshirt2black.jpg"/>
+               </div>
+                <div class="colorbuttons">
+                <button class="blackbutton" type="button" onclick='colorchange("Assets/store/tshirt2black.jpg", "img2");'></button>
+                <button class="greybutton" type="button" onclick='colorchange("Assets/store/tshirt2grey.jpg", "img2");'></button>
+                <button class="bluebutton" type="button" onclick='colorchange("Assets/store/tshirt2blue.jpg", "img2");'></button>
+                </div>
+				<div class="iteminfo">
+					<p>Deathbat T-Shirt</p>
+					<p>Price:£12</p>
+				</div>
+		</li>
+		<li class="item" data-name="The Offical Deathbat Hat" data-price="20">
+				<div class="storeimg">
+				<img id="img3"src="Assets/store/hat1black.jpg"/>
+               </div>
+                <div class="colorbuttons">
+                <button class="blackbutton" type="button" onclick='colorchange("Assets/store/hat1black.jpg", "img3");'></button>
+                <button class="greybutton" type="button" onclick='colorchange("Assets/store/hat1grey.jpg", "img3");'></button>
+                
+                </div>
+				<div class="iteminfo">
+					<p>The Offical Deathbat Hat</p>
+					<p>Price:£20</p>
+				</div>
+		</li>
+		<li class="item" data-name="The Deathbat Truckers hat" data-price="20">
+            <div class="storeimg">
+				<img id="img4"src="Assets/store/hat2black.jpg"/>
+                </div>
+                <div class="colorbuttons">
+                <button class="blackbutton" type="button" onclick='colorchange("Assets/store/hat2black.jpg", "img4");'></button>
+                <button class="greybutton" type="button"  onclick='colorchange("Assets/store/hat2grey.jpg", "img4");'></button>
+               
+                </div>
+				<div class="iteminfo">
+					<p>The Deathbat Truckers hat</p>
+					<p>Price:£20</p>
+				</div>
+		</li>
+		<li class="item" data-name="Orange Deathbat T-Shirt" data-price="12">
+            <div class="storeimg">
+				<img id="img5"src="Assets/store/tshirt3black.jpg">
+                </div>
+                <div class="colorbuttons">
+                <button class="blackbutton" type="button" onclick='colorchange("Assets/store/tshirt3black.jpg", "img5");'></button>
+                <button class="greybutton" type="button" onclick='colorchange("Assets/store/tshirt3grey.jpg", "img5");'></button>
+                <button class="redbutton" type="button" onclick='colorchange("Assets/store/tshirt3red.jpg", "img5");'></button>
+                <button class="greenbluebutton" type="button" onclick='colorchange("Assets/store/tshirt3blue.jpg", "img5");'></button>
+                </div>
+				<div class="iteminfo">
+					<p>Orange Deathbat T-Shirt</p>
+					<p>Price:£12</p>
+				</div>
+		</li>
+		<li class="item" data-name="A7X Biker Long Sleeve Tee" data-price="20">			
+            <div class="storeimg">
+				<img id="img6" src="Assets/store/tshirt4black.jpg"/>
+                </div>
+                <div class="colorbuttons">
+                <button class="blackbutton" type="button" onclick='colorchange("Assets/store/tshirt4black.jpg", "img6");'></button>
+                <button class="greybutton" type="button" onclick='colorchange("Assets/store/tshirt4grey.jpg", "img6");'></button>
+                <button class="bluebutton" type="button" onclick='colorchange("Assets/store/tshirt4blue.jpg", "img6");'></button>
+                <button class="brownbutton" type="button" onclick='colorchange("Assets/store/tshirt4brown.jpg", "img6");'></button>
+                </div>
+				<div class="iteminfo">
+					<p>A7X Biker Long Sleeve Tee</p>
+					<p>Price:£20</p>
+				</div>			
+		</li>
+        <li class="item" data-name="Sevenfold Deathbarb T-Shirt" data-price="15">
+				<div class="storeimg">
+				<img id="img7" src="Assets/store/tshirt5grey.jpg"/>
+                </div>
+                <div class="colorbuttons">
+                 <button class="greybutton" type="button" onclick='colorchange("Assets/store/tshirt5grey.jpg", "img7");'></button>
+                </div>
+				<div class="iteminfo">
+					<p>Sevenfold Deathbarb T-Shirt</p>
+					<p>Price:£15</p>
+				</div>
+		</li>
+        <li class="item" data-name="Hail To the King socks" data-price="10">
+				<div class="storeimg">
+				<img id="img8" src="Assets/store/socks1black.jpg"/>
+                </div>
+                <div class="colorbuttons">
+                <button class="blackbutton" type="button" onclick='colorchange("Assets/store/socks1black.jpg", "img8");'></button>
+                <button class="greybutton" type="button" onclick='colorchange("Assets/store/socks1grey.jpg", "img8");'></button>
+                <button class="bluebutton" type="button" onclick='colorchange("Assets/store/socks1blue.jpg", "img8");'></button>
+                </div>
+				<div class="iteminfo">
+					<p>Hail To the King socks</p>
+					<p>Price:£10</p>
+				</div>
+		</li>
+        <li class="item" data-name="Space Helmet Hoodie" data-price="45">
+				<div class="storeimg">
+				<img id="img9" src="Assets/store/hoodie1black.jpg"/>
+                </div>
+                <div class="colorbuttons">
+                <button class="blackbutton" type="button" onclick='colorchange("Assets/store/hoodie1black.jpg", "img9");'></button>
+                <button class="greybutton" type="button" onclick='colorchange("Assets/store/hoodie1grey.jpg", "img9");'></button>
+                
+                </div>
+				<div class="iteminfo">
+					<p>Space Helmet Hoodie</p>
+					<p>Price:£45</p>
+				</div>
+		</li>
+	</ul>
+	
+	
+</div>
+</section>
+<section class="social-bar">
+<div id="social-icons">
+<a href="#"><img src="Assets/social/facebookicon.png"></a>
+<a href="#"><img src="Assets/social/twittericon.png"></a>
+<a href="#"><img src="Assets/social/insta.png"></a>
+<a href="#"><img src="Assets/social/youtubelogo.png"></a>
+<a href="#"><img src="Assets/social/spotifyicon.png"></a>
+</div>
+<div id="themes">
+
+
+</div>
+
+</section>
+<footer class="page-footer">
+	<div id="footerinner">
+		<div id="footer-img">
+		<!--<img src="Assets/logo.png" alt="sevenfoldlogo" />-->
+		</div>
+          <div class="footer-links"> 		  
+		  <p style="color: white; font-family: Tahoma, Geneva, sans-serif">Website Links</p>
+                  <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">News</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!">Tour</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Photos</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Store</a></li>
+            </div>  
+			<div class="footer-links"> 		  
+		  <p style="color: white; font-family: Tahoma, Geneva, sans-serif">Social Links</p>
+                  <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!">Youtube</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Amazon</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Other</a></li>
+            </div>	
+			<div class="footer-links"> 		  
+		  <p style="color: white; font-family: Tahoma, Geneva, sans-serif">Social Links</p>
+                  <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!">Youtube</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Amazon</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Other</a></li>
+            </div>	
+			
+          <div id="footer-copyright">            
+            © 2017 AVENGED SEVENFOLD          
+          </div>
+	</div>
+</footer>
+
+
+</div>
+</body>
+</html>

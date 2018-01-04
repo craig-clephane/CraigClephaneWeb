@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<title>Sevenfold Tour</title>
+		<!--Links and Scripts-->
+<link href="CSS/stylenav.css" rel="stylesheet" />
+<link href="CSS/fonts.css" rel="stylesheet" />
+<link href="CSS/tour.css" rel="stylesheet" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="JS/togglemenu.js"></script>
+<script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+<script src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+<script src="JS/tourscript.js"></script>
+<script src="JS/themes.js"></script>
+</head>
+
+<body>
+<nav id ="navbar">		
+    	<!--Navigation Logo-->		
+		<a href="index.html"><img src="Assets/logo.png" alt="sevenfoldlogo" /></a>					
+        <p>AVENGED SEVENFOLD</p>
+	
+    <!--BURGER ICON NAVIGATION-->	       
+    <div id="sidebar">													
+       <ul>
+       	<li><a href="#store">STORE</a></li>								
+		<li><a href="#photos">PHOTOS </a></li>      	
+        <li><a href="tour.html">TOUR</a></li>
+       	<li><a href="news.html">NEWS</a></li>
+        <li><a href="index.html">HOME</a></li>
+       </ul>
+    </div>
+    
+    <!--Burger menu icon-->
+    <div class="mainmenuicon" onclick="toggleSidebar()">					
+            <span></span>
+            <span></span>
+            <span></span>
+	</div>
+        
+    <!--Desktop Navigation -->  
+    <ul class ="menu">
+        <li><a href="store.html">STORE</a></li>								
+        <li id="photodrop"> <a href="photohome.html">PHOTOS</a>
+           <ul class="hidden">
+             <li><a href="phototour.html">The tour</a></li>        
+           </ul>
+        </li>
+        <li><a href="tour.html">TOUR</a></li>
+        <li><a href="news.html">NEWS</a></li>
+        <li><a href="index.html">HOME</a></li>
+    </ul>
+</nav>
+
+    <div id="top">	
+            
+    </div> 
+    
+    <section id = "outter-body">
+    <h2 class="headingnone">.</h2>
+    	<section id = "inner-body">
+        
+        <div id = "tour-notice">
+        <span id="remove-button" onclick="removenotice()">x</span>
+        <h2>Notice</h2>
+        <p>Please note that you will be unable to purchase tickets until futher notice.<br />You can still view and explore all the tour dates.<br />				More dates coming soon!</p>
+        </div>
+        <div id = "geo-location-tab">
+        <p id="geotext">Find the closest performance to you<br />Please note : You must enable geolocation<br />for this feature to work.</p>       
+        <button onclick="getLocation()">Locate</button>
+        </div>
+        <div id = "foundlocation">
+        
+        </div>
+   
+        </section>
+    
+    
+    </section>
+  
+    
+<section class="social-bar">
+<h2 class="headingnone">.</h2>
+<div id="social-icons">
+<a href="#"><img src="Assets/social/facebookicon.png" alt="facebookicon"></a>
+    <a href="#"><img src="Assets/social/twittericon.png" alt="twittericon"></a>
+    <a href="#"><img src="Assets/social/insta.png"		 alt="instaicon"></a>
+    <a href="#"><img src="Assets/social/youtubelogo.png" alt="youtubeicon"></a>
+    <a href="#"><img src="Assets/social/spotifyicon.png" alt="spotifyicon"></a>
+</div>
+<div id="themes">
+
+
+</div>
+
+</section>
+<footer class="page-footer">
+	<div id="footerinner">
+		<div id="footer-img">
+		<!--<img src="Assets/logo.png" alt="sevenfoldlogo" />-->
+		</div>
+          <div class="footer-links"> 		  
+		  <p style="color: white; font-family: Tahoma, Geneva, sans-serif">Website Links</p>
+          <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">News</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!">Tour</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Photos</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Store</a></li>
+          </ul>
+            </div>  
+			<div class="footer-links"> 		  
+		  <p style="color: white; font-family: Tahoma, Geneva, sans-serif">Social Links</p>
+          <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!">Youtube</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Amazon</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Other</a></li>
+          </ul>
+            </div>	
+			<div class="footer-links"> 		  
+		  <p style="color: white; font-family: Tahoma, Geneva, sans-serif">Themes</p>
+          <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!" onclick="themechange(0)">Standard</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!" onclick="themechange(1)">Exist</a></li>
+                   <li><a class="grey-text text-lighten-3" href="#!" onclick="themechange(2)">City of Evil</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!" onclick="themechange(3)">Nightmare</a></li>
+          </ul>        
+            </div>	
+           
+			
+          <script src="JS/themes.js"></script>
+	</div>
+    
+</footer>
+</body>
+</html>
